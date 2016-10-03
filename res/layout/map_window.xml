@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<fragment 
+          android:id="@+id/mymap"
+          android:layout_width="fill_parent"
+          android:layout_height="415dp"
+          class="com.google.android.gms.maps.MapFragment"/>
+
+<com.androidplot.xy.XYPlot
+    android:id="@+id/aprLocErrorPlot"
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    androidPlot.domainLabel="Time (s)"
+ 	androidPlot.rangeLabel="Error (m)"
+ 	androidPlot.domainLabelWidget.labelPaint.textSize="11dp"
+ 	androidPlot.rangeLabelWidget.labelPaint.textSize="11dp"
+ 	androidPlot.graphWidget.marginTop="8dp"
+ 	androidPlot.graphWidget.marginLeft="22dp"
+ 	androidPlot.graphWidget.marginBottom="16dp"
+ 	androidPlot.graphWidget.marginRight="18dp"
+	androidPlot.graphWidget.rangeLabelPaint.textSize="11dp"
+ 	androidPlot.graphWidget.rangeOriginLabelPaint.textSize="11dp"
+ 	androidPlot.graphWidget.domainLabelPaint.textSize="11dp"
+ 	androidPlot.graphWidget.domainOriginLabelPaint.textSize="11dp" 	
+    android:layout_marginTop="1px"
+    android:layout_marginLeft="1px"
+    android:layout_marginRight="1px"
+    />
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >    
+    <TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+		<Button android:layout_height="70dp"
+			android:layout_width="0.0dip"
+			android:id="@+id/btBack"
+			android:text="Back"
+			android:layout_weight="1"
+			android:textSize="28sp"/>			
+	</TableRow>
+</TableLayout>
+
+	    
+</LinearLayout>
